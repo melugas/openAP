@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Manjari", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  max-height: 5805px;
+  display: grid;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  font-size: calc(5px + 1vmin);
+  justify-content: inherit;
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  left: 800px;
+  right: 0;
+  height: 300px;
+  font-size: 20px;
+  font-family: Manjari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  letter-spacing: 0.03em;
+  background-color: #0d64ff;
+  color: white;
+}
+
+.headerMenu {
+  position: absolute;
+  left: 760px;
+  top: 38px;
+}
