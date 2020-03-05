@@ -19,9 +19,12 @@
 
 .header {
   display: flex;
-  flex-direction: row;
   align-items: left;
   font-size: calc(5px + 1vmin);
+  grid-column: 1 / -1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-logo {
@@ -84,20 +87,15 @@
   top: 38px;
 }
 
-ul {
+/* Top Nav Menu */
+.header ul {
   list-style: none;
   display: inline-block;
 }
 
-ol {
-  list-style: none;
-  display: inline-block;
-  margin-left: 180px;
-}
-
-ul li {
+.header ul li {
   font-family: "Manjari";
-  display: inline-block;
+  display: inline-block !important;
   padding: 10px 20px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -106,11 +104,32 @@ ul li {
   transition: 0.3s;
 }
 
-ul li:hover {
+.header ul li:hover {
   cursor: pointer;
   border-bottom: 2px solid #0d64ff;
   transition: 0.3s;
   border-radius: 2%;
+}
+
+/* Footer Menu */
+footer ol {
+  list-style: none;
+  display: inline-block;
+  margin-left: 180px;
+}
+
+/* Sections */
+
+/* -- Story --*/
+section .story {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 1264px;
+  left: 0px;
+  top: 1264px;
+  background: white;
+  color: #0d64ff;
 }
 
 section h1 {
@@ -125,20 +144,7 @@ section h1 {
   letter-spacing: -0.01em;
   left: 612px;
 }
-
-/* -- Story --*/
-section .story {
-  display: flex;
-  margin: auto;
-  width: 100%;
-  height: 1264px;
-  left: 0px;
-  top: 1264px;
-  background: white;
-  color: #0d64ff;
-}
-
-section h1.story {
+section .story h1 {
   margin: auto;
   margin-top: 28px;
   width: 547px;
@@ -155,7 +161,7 @@ section h1.story {
   background: transparent;
 }
 
-section p.story {
+section .story p {
   margin: auto;
   margin-top: 800px;
   width: 780px;
@@ -175,6 +181,23 @@ section p.story {
   color: #858585;
 }
 
+.open-logo {
+  width: 300px;
+  height: 434px;
+  left: 940px;
+  top: 150px;
+  display: flex;
+  font-family: "Manjari";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 101%;
+
+  text-align: right;
+
+  color: #0d64ff;
+}
+
 /* -- Mission --*/
 
 section .mission {
@@ -188,8 +211,9 @@ section .mission {
   color: white;
 }
 
-section h1.mission {
+section .mission h1 {
   margin-left: 612px;
+  max-width: 7em;
   top: 1352px;
   font-style: normal;
   font-weight: bold;
@@ -200,7 +224,7 @@ section h1.mission {
   letter-spacing: -0.01em;
 }
 
-section h2.mission {
+section .mission h2 {
   position: absolute;
   width: 862px;
   height: 174px;
@@ -247,9 +271,12 @@ section .values {
   color: white;
 }
 
-section h1.values {
-  top: 2224px;
+section .values h1 {
+
   margin-left: 612px;
+  max-width: 7em;
+  top: 2224px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 54px;
@@ -259,22 +286,67 @@ section h1.values {
   letter-spacing: -0.01em;
 }
 
+.values ul {
+  list-style: none;
+  align-content: center;
+  margin-left: 70px;
+  padding: 0px 10px;
+}
+
+.values ul li {
+  display: flex;
+  color: white;
+  position: static;
+  width: 252px;
+  height: 140px;
+  top: 2710px;
+  margin-top: 500px;
+  font-family: Manjari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 135.8%;
+  /* or 27px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
 /* -- WhoWeAre -- */
 section .whoweare {
   display: flex;
-  position: sticky;
+  margin:auto;
   width: 100%;
-  height: 960px;
+  height: 1008px;
   left: 0px;
   top: 1264px;
-  background: white;
+  font-size: 20px;
+  background: transparent;
   color: #0d64ff;
+}
+section .whoweare h2 {
+  position: absolute;
+  display: flex;
+  color: black;
+  left: 500px;
+  top: 348px;
+}
+
+section .whoweare p {
+  position: absolute;
+  display: flex;
+  color: black;
+  left: 500px;
+  top: 400px;
 }
 
 /* -- Careers -- */
 section .careers {
   display: flex;
-  position: static;
+  margin: auto;
+
   width: 100%;
   height: 789px;
   left: 0px;
@@ -283,7 +355,7 @@ section .careers {
   color: #0d64ff;
 }
 
-section h1.careers {
+section .careers h1 {
   position: absolute;
   width: 387px;
   height: 70px;
@@ -291,7 +363,7 @@ section h1.careers {
   top: 3980px;
 }
 
-section h2.careers {
+section .careers h2 {
   position: absolute;
   width: 412px;
   height: 224px;
@@ -359,8 +431,8 @@ section h3.careers:hover {
 
 section .connect {
   display: flex;
-  position: static;
-  width: 100%x;
+  margin: auto;
+  width: 100%;
   height: 485px;
   left: 0px;
   top: 4865px;
@@ -372,23 +444,6 @@ section .connect {
   width: 280px;
   height: 120px;
   padding: 10px 20px;
-}
-
-.open-logo {
-  width: 580px;
-  height: 434px;
-  left: 940px;
-  top: 150px;
-  display: flex;
-  font-family: "Manjari";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 101%;
-
-  text-align: right;
-
-  color: #0d64ff;
 }
 
 section h2 {
@@ -409,6 +464,8 @@ section h2 {
 
   color: #0d64ff;
 }
+
+/* End Sections */
 
 /* -- Shapes -- */
 
@@ -504,6 +561,7 @@ section h2 {
 
 .dot-gray {
   position: absolute;
+
   width: 31px;
   height: 31px;
   left: 99px;
@@ -583,7 +641,7 @@ section h2 {
 
 .open-drk-blue {
   position: absolute;
-  left: 1322px;
+  left: 1318px;
   top: 1441px;
 }
 
@@ -635,7 +693,7 @@ section h2 {
   left: 261px;
   top: 2121px;
 }
-/* -- Filter -- */
+/* -- Filter -- NOT USED 
 .filter {
   width: 1177px;
   height: 60px;
@@ -658,7 +716,7 @@ section h2 {
   font-weight: bold;
   font-size: 25px;
   line-height: 120.8%;
-  /* identical to box height, or 30px */
+ identical to box height, or 30px 
 
   text-align: center;
 
@@ -675,10 +733,73 @@ section h2 {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 70px;
   color: white;
+} */
+
+/* SlideMenu */
+
+.active {
+  color:white;
+  transform: scale(1) ease;
+  font-weight: bold;
+
 }
 
-/* Scrollbar */
+#whoweare {
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-left: 16%;
+}
 
+.menu-item ul {
+  display: inline-flex;
+  background: #ebebeb;
+  width: 1000px;
+  height: 55px;
+  padding: 0px 5px;
+  margin: 0px;
+  position: relative;
+  border-radius: 40px;
+  overflow: visible;
+  z-index:2;
+  text-align: center;
+}
+
+.menu-item li {
+  flex-grow: 1;
+  white-space: nowrap;
+  list-style: none ;
+  padding: 0;
+  height: 22px;
+  margin: 14px 0px;
+  border: 1px solid blue;
+  z-index: 2;
+  transition: highlight 0.3s ease-in-out ;
+
+}
+
+.menu-item li:hover {
+  cursor: pointer;
+  color:rgb(255, 251, 251);
+}
+
+#highlight {
+  height: 44px;
+  border-radius: 28px;
+  width:25%; 
+  height: 100%;
+  background: #0d64ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+
+
+/*-
 .menu-item {
   padding: 0 15px;
   margin: 5px 10px;
@@ -690,42 +811,132 @@ section h2 {
   font-weight: bold;
   font-size: 25px;
   line-height: 120.8%;
+  outline: none;
 }
 
-/* .menu-item-wrapper.active {
-  position: absolute;
-  width: 211px;
-  height: 73px;
-  left: 0px;
-  top: -6px;
-  background: #0d64ff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 70px;
-  color: white;
-  overflow: none;
+div .menu-wrapper {
+  overflow: visible !important;
+  max-width: 1440px;
+  outline: none;
 }
+
+div .menu-wrapper--inner {
+  width: 1177px important!;
+  max-width: 1171px;
+  margin-left: 0px;
+  -webkit-transform: none !important;
+  transform: none !important;
+  transition: none !important;
+  outline: none;
+}
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  font-family: Manjari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 120.8%;
+  outline: none;
+}
+
+.menu-item:hover {
+  transform: scale(1) ease;
+  color: white;
+}
+
+.menu-item-wrapper {
+  position: static;
+  outline: none;
+}
+
 .menu-item.active {
-  border: 1px green solid;
-  position: absolute;
-  width: 211px;
-  height: 73px;
-  left: 0px;
-  top: -6px;
-  background: #0d64ff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 70px;
-  color: white;
+  position: static;
+  margin-top: 16px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 25px;
 }
 
-*/
-.horizontal-menu {
+.highlight{
+  border-radius: 28px;
+  outline: none;
+  height: 58px;
+  width: auto;
   position: relative;
+  display: inline-block;
+  background: #0d64ff;
+  color: white;
+  font-weight: bold;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+transform: translateX(-100%);
+transition: all .05s ease-in-out;
+  
+  
+
+  -webkit-box-shadow: 0px 0px 300x 0px rgba(53, 71, 113, 0.05);
+  -moz-box-shadow: 0px 0px 300px 0px rgba(53, 71, 113, 0.05);
+  box-shadow: 0px 0px 200px 0px rgba(53, 71, 113, 0.05);
+}
+
+.horizontal-menu {
+  display: flex;
+  max-width: 1440px;
   height: 60px;
-  left: 122px;
-  top: 200px;
-  width: 1440px;
+  margin-left: 122px;
+  margin-top: 150px;
   display: inline-block;
   background: #ebebeb;
   border-radius: 70px;
+  z-index: 1;
+}
+*/
+
+/* OPEN AP LISTS */
+
+.open ul {
+  display: inline-block;
+  list-style: none;
+  width: 1100px;
+  margin-left: 130px;
+  background: transparent;
 }
 
+.open ul li {
+  display: inline-block;
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+.open ul li:nth-child(5) {
+  display: inline-block;
+  margin-top: 136px;
+  padding: -16px 20px;
+  margin-left: 130px;
+}
+
+.whoweare-dot {
+  position: relative;
+  width: 230px;
+  height: 229px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}
+
+.whoweare-dot-2 {
+  position: absolute;
+  width: 230px;
+  height: 229px;
+  left: 300px;
+  top: 300px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import open_logo_blue from "./static/images/open_logo_blue.png";
 
 
-//ToDo: separate top nav menu from About.js with this component
+//ToDo: use this component to separate top nav menu from About.js
 const Header = () => {
   return (
     <div id="container">

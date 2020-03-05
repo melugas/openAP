@@ -9,15 +9,24 @@ import open_O_drkblue from "../static/images/open_O_drkblue.svg";
 import open_opaque from "../static/images/open_opaque.svg";
 import open_green from "../static/images/open_green.svg";
 import open_logo_white from "../static/images/open_logo_white.png";
-import Scrollbar from "./Scrollbar.js";
+import Filter from "./Filter.js";
+import SlideMenu from "./SlideMenu.js"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class About extends React.Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 2000
+    });
+  }
+
   render() {
     return (
       <div className="container">
         <header>
           <img src={open_logo_blue} className="logo" alt="open-logo-blue" />
-          <nav className="headerMenu">
+          <nav className="header headerMenu">
             <ul>
               <li>How it works</li>
               <img src={logo} alt="logo"></img>
@@ -33,7 +42,7 @@ class About extends React.Component {
             </ul>
           </nav>
         </header>
-        <section>
+        <section className="story">
           <div className="story">
             <span>
               <img className="image-url" />
@@ -44,11 +53,21 @@ class About extends React.Component {
             </h2>
             <button className="button">Schedule a demo</button>
             <div>
-              <div className="rectangle"></div>
-              <div className="ellipse-lg"></div>
-              <div className="ellipse-sm"></div>
-              <img className="open-gray" src={open_O_gray} alt="open_O_gray" />
-              <img className="open-blue" src={open_A_blue} alt="open_O_gray" />
+              <div className="rectangle" data-aos="fade-up"></div>
+              <div className="ellipse-lg" data-aos="fade-up"></div>
+              <div className="ellipse-sm" data-aos="fade-up"></div>
+              <img
+                className="open-gray"
+                data-aos="fade-up"
+                src={open_O_gray}
+                alt="open_O_gray"
+              />
+              <img
+                className="open-blue"
+                data-aos="fade-up"
+                src={open_A_blue}
+                alt="open_O_gray"
+              />
               <img
                 className="open-o-blue"
                 src={open_O_blue}
@@ -70,8 +89,8 @@ class About extends React.Component {
           </div>
           <h1 className="open-logo">OpenAP</h1>
         </section>
-        <div className="rectangle-lg"></div>
-        <section>
+        <div className="rectangle-lg" data-aos="fade-up"></div>
+        <section className="mission">
           <div className="mission">
             <h1 className="mission">Our Mission</h1>
             <img className="dot-gray-lg" />
@@ -97,31 +116,49 @@ class About extends React.Component {
         </section>
         <img src={open_opaque} className="opaque" />
         <img src={open_green} className="green" />
-        <section>
+        <section className="values">
           <div className="values">
             <h1 className="values">Our Values</h1>
+
             <img className="values-dot1" />
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
             <img className="values-dot2" />
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
             <img className="values-dot3" />
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
             <img className="values-dot4" />
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
           </div>
         </section>
         <section>
           <div className="whoweare">
             <br />
             <h1>Who we are</h1>
-           
-            <div>
-              {/* 
-              <div className="option">OpenAP</div>
-              <div>Board of Directors</div>
-              <div>Product Council</div>
-              <div>Advertiser Advisory Board</div> 
-              */}
-              <Scrollbar/>
-            </div>
+           {/*  <Filter /> */}
+           <SlideMenu/>
           </div>
         </section>
+      {/*   <SlideMenu/> */}
         <section>
           <div className="careers">
             <h1 className="careers">Careers</h1>
@@ -139,41 +176,39 @@ class About extends React.Component {
           <div className="connect"></div>
         </section>
         <footer>
-          <nav>
-            <img src={open_logo_white} className="footer-logo" />
-            <ol>
-              {<strong>Explore our site</strong>}
-              <li>
-                <a href="https://www.openaptvapp.com/">Sign In</a>
-              </li>
-              <li>Schedule a Demo</li>
-              <li>How it Works</li>
-              <li>Insights</li>
-              <li>About Us</li>
-            </ol>
-            <ol>
-              {<strong>Say Hello</strong>}
-              <br />
-              <li>
-                <strong>New York</strong>
-              </li>
-              <li>29 W 17th St</li>
-              <li>Fourth Floor</li>
-              <li>New York, NY 10011</li>
-              <br />
-              <li>
-                <strong>Los Angeles</strong>
-              </li>
-              <li>10250 Constellation Blvd</li>
-              <li>Los Angeles, Ca 90066</li>
-            </ol>
-            <ol>
-              {<strong>Connect with us</strong>}
-              <li>LinkedIn</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
-            </ol>
-          </nav>
+          <img src={open_logo_white} className="footer-logo" />
+          <ol className="footer">
+            {<strong>Explore our site</strong>}
+            <li>
+              <a href="https://www.openaptvapp.com/">Sign In</a>
+            </li>
+            <li>Schedule a Demo</li>
+            <li>How it Works</li>
+            <li>Insights</li>
+            <li>About Us</li>
+          </ol>
+          <ol>
+            {<strong>Say Hello</strong>}
+            <br />
+            <li>
+              <strong>New York</strong>
+            </li>
+            <li>29 W 17th St</li>
+            <li>Fourth Floor</li>
+            <li>New York, NY 10011</li>
+            <br />
+            <li>
+              <strong>Los Angeles</strong>
+            </li>
+            <li>10250 Constellation Blvd</li>
+            <li>Los Angeles, Ca 90066</li>
+          </ol>
+          <ol>
+            {<strong>Connect with us</strong>}
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+          </ol>
         </footer>
       </div>
     );

@@ -9,29 +9,70 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* .wide, .hero, .header .footer {
+  grid-column: 1 / -1;
+}  */
+
+
+/* @media (min-width: 1440px){
+.container {width: 1440px}
+} */
+
+/* @media screen {
+  * {
+      background: silver
+  } 
+}*/
+
+@media screen and (max-width: 1200px) {
+  section {
+    grid-row: 1 / 6;
+  }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+    grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+}
+
+
 .container {
   position: relative;
   max-width: 1440px;
   max-height: 5805px;
   display: grid;
+
+  overflow-x: hidden;
 }
+
 
 header {
   display: flex;
   flex-direction: row;
+  width: auto;
   align-items: left;
   font-size: calc(5px + 1vmin);
   justify-content: inherit;
+ ; 
+}
+
+header .headerMenu {
+  position: absolute;
+  left: 760px;
+  top: 38px;
 }
 
 footer {
   display: flex;
   bottom: 0;
+  width: auto;
   left: 800px;
+  top: 5345px;
   right: 0;
   height: 300px;
   font-size: 20px;
-  font-family: Manjari;
+  font-family: "Manjari";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -43,8 +84,4 @@ footer {
   color: white;
 }
 
-.headerMenu {
-  position: absolute;
-  left: 760px;
-  top: 38px;
-}
+
