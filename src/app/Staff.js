@@ -11,40 +11,47 @@ import orange from "../static/images/orange.png";
 
 const Staff = () => {
   return (
-    <div>
       <div className="open">
         <ul className="open">
           <li>
             <img src={openAP1} className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
 
           <li>
             <img src={openAP2}className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Lev!y</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
           <li>
             <img src={openAP3} className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
           <li> 
             <img src={openAP4} className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
           <li>
             <img src={openAP5} className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
           <li>
             <img src={openAP6} className="whoweare-dot" />
-            <h4 style={{display: `flex`, position: `absolute`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
           </li>
           <li>
-              <img src={orange} className="whoweare-dot" />
+              <img src={openAP7} className="whoweare-dot" />
+              <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`}}>David Levy</h4>
+            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `black`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
             </li>
         </ul>
       </div>
-    </div>
+  
   );
 };
 

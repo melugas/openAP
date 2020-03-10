@@ -14,6 +14,9 @@ import dropdot from "../static/images/dropdot.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+//THIS COMPONENT IS NOT BEING USED 
+
 //Maps menu list items
 export const Menu = (list, selected) =>
   list.map(el => {

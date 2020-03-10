@@ -9,25 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .wide, .hero, .header .footer {
-  grid-column: 1 / -1;
-}  */
-
-
 /* @media (min-width: 1440px){
 .container {width: 1440px}
 } */
 
-/* @media screen {
-  * {
-      background: silver
-  } 
-}*/
 
+/* 
 @media screen and (max-width: 1200px) {
-  section {
-    grid-row: 1 / 6;
-  }
+add breaks
 }
 
 .grid {
@@ -35,6 +24,152 @@ body {
     grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
     grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
 }
+ */
+
+/* Top Nav Menu */
+.header ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.header ul li {
+  font-family: "Manjari";
+  display: inline-block !important;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.header ul li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #0d64ff;
+  transition: 0.3s;
+  border-radius: 2%;
+}
+.header {
+  display: flex;
+  align-items: left;
+  font-size: calc(5px + 1vmin);
+  grid-column: 1 / -1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Footer Menu */
+
+footer h1{
+position: absolute;
+width: 255px;
+height: 252px;
+left: 455px;
+top: 5250px;
+font-family: Manjari;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+footer h2{
+  position: absolute;
+  width: 255px;
+  height: 252px;
+  left: 600px;
+  top: 5250px;
+  font-family: Manjari;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  
+  letter-spacing: 0.03em;
+  
+  color: #FFFFFF;
+  }
+
+
+footer div{
+    margin-left: 180px;
+    width: 1300px;
+  }
+
+.footer-logo {
+  position: absolute;
+  width: 104.63px;
+  height: 62px;
+  left: 69px;
+  top: 5270px;
+}
+
+ footer ul {
+  position: absolute;
+  list-style: none;
+  left: 6em;
+  align-content: center;
+  margin-left: 70px;
+  padding: 0px 0px;
+  white-space: wrap;
+}
+
+footer ul li.footer-menu {
+  color: white;
+  width: 140px;
+
+  font-family: Manjari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 135.8%;
+  /* or 27px */
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+footer .heading {
+  position: absolute;
+  font-family: "Manjari";
+  font-style: normal;
+  font-weight: bold;
+  top: -40px;
+  margin-left: 0;
+  padding: 0px 0px;
+  font-size: 20px;
+  line-height: 107.8%;
+  /* or 32px */
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.body-1 {
+  margin-top: 80px;
+  margin-left: 330px;
+}
+.body-2{
+  margin-top: 80px;
+  margin-left: 600px;
+
+}
+
+.body-3{
+  margin-top: 80px;
+  margin-left: 930px;
+  width: 100%;
+  
+}
+
 
 
 .container {
@@ -69,8 +204,8 @@ footer {
   width: auto;
   left: 800px;
   top: 5345px;
-  right: 0;
-  height: 300px;
+  right:0;
+  height: 360px;
   font-size: 20px;
   font-family: "Manjari";
   font-style: normal;
@@ -83,5 +218,7 @@ footer {
   background-color: #0d64ff;
   color: white;
 }
+
+
 
 

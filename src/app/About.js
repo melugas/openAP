@@ -9,10 +9,17 @@ import open_O_drkblue from "../static/images/open_O_drkblue.svg";
 import open_opaque from "../static/images/open_opaque.svg";
 import open_green from "../static/images/open_green.svg";
 import open_logo_white from "../static/images/open_logo_white.png";
+import bar from "../static/images/bar.svg";
+import connect_blue from "../static/images/connect_blue.svg";
+import connect_green from "../static/images/connect_green.svg";
+import whoweare_A from "../static/images/whoweare_A.svg";
+import whoweare_blue_bar from "../static/images/whoweare_blue_bar.svg";
+import graybar from "../static/images/graybar.svg";
 import Filter from "./Filter.js";
-import SlideMenu from "./SlideMenu.js"
+import SlideMenu from "./SlideMenu.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Story from "./Story.js";
 
 class About extends React.Component {
   componentDidMount() {
@@ -42,71 +49,28 @@ class About extends React.Component {
             </ul>
           </nav>
         </header>
-        <section className="story">
-          <div className="story">
-            <span>
-              <img className="image-url" />
-            </span>
-            <h2>
-              The advanced advertising company bringing simplicity and scale  to
-              audience-based campaigns in television
-            </h2>
-            <button className="button">Schedule a demo</button>
-            <div>
-              <div className="rectangle" data-aos="fade-up"></div>
-              <div className="ellipse-lg" data-aos="fade-up"></div>
-              <div className="ellipse-sm" data-aos="fade-up"></div>
-              <img
-                className="open-gray"
-                data-aos="fade-up"
-                src={open_O_gray}
-                alt="open_O_gray"
-              />
-              <img
-                className="open-blue"
-                data-aos="fade-up"
-                src={open_A_blue}
-                alt="open_O_gray"
-              />
-              <img
-                className="open-o-blue"
-                src={open_O_blue}
-                alt="open_O_blue"
-              />
-              <img className="ellipse-lg-gray" />
-              <img className="ellipse-sm-right" />
-              {/* <span className="circle dot"></span> */}
-            </div>
-            <h1 className="story">Our Story</h1>
-            <p className="story">
-              Founded and owned by TV's largest publishers, we are today a
-              collective of seasoned leaders focused on building a company that
-              will fundamentally change the way advertising is bought and sold
-              on television. Together with the support of our members Fox,
-              NBCUniversal, ViacomCBS and Univision, our mission is to bring
-              simplicity and scale to audience-based campaigns in television.
-            </p>
-          </div>
+        <section>
+          <Story />
           <h1 className="open-logo">OpenAP</h1>
         </section>
         <div className="rectangle-lg" data-aos="fade-up"></div>
-        <section className="mission">
-          <div className="mission">
-            <h1 className="mission">Our Mission</h1>
-            <img className="dot-gray-lg" />
-            <img className="dot-green-sm" />
+        <section>
+          <div id="mission">
+            <h1>Our Mission</h1>
+            <img className="dot-gray-lg" data-aos="fade-right" />
+            <img className="dot-green-sm" data-aos="fade-right" />
             <img
               src={open_O_drkblue}
               className="open-drk-blue"
               alt="open-O-drkblue"
             />
-            <h2 className="mission">
+            <h2>
               The industry has reached an inflection point for advanced
               advertising. OpenAP is shaping the future of television by:
             </h2>
-            <img className="rectangle-v" />
-            <img className="dot-gray" />
-            <img className="dot-gray-2" />
+            <div className="rectangle-v" ></div>
+            <img className="dot-gray" data-aos="fade-up" />
+            <img className="dot-gray-2" data-aos="fade-up" />
             <p className="left">
               Connecting publishers to offer the single largest advanced
               advertising platform in the U.S.
@@ -115,35 +79,42 @@ class About extends React.Component {
           </div>
         </section>
         <img src={open_opaque} className="opaque" />
-        <img src={open_green} className="green" />
-        <section className="values">
-          <div className="values">
-            <h1 className="values">Our Values</h1>
+        <img src={open_green} className="green" data-aos="fade-right" />
+        <img src={graybar} data-aos="fade-up" className="graybar"></img>
+        <section>
+          <div id="values">
+            <img
+              src={whoweare_A}
+              data-aos="fade-left"
+              className="values-a"
+            ></img>
+            <h1>Our Values</h1>
+            <button className="careersBtn">View Careers</button>
+            <ul>
+              <li>
+                <img className="values-dot" />
+                <a>Lorem ipsum</a>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
 
-            <img className="values-dot1" />
-            <ul>
               <li>
+                <img className="values-dot" />
+                <a>Consectetur</a>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </li>
-            </ul>
-            <img className="values-dot2" />
-            <ul>
+
               <li>
+                <img className="values-dot" />
+                <a>Magna aliqua</a>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </li>
-            </ul>
-            <img className="values-dot3" />
-            <ul>
+
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </li>
-            </ul>
-            <img className="values-dot4" />
-            <ul>
-              <li>
+                <img className="values-dot" />
+                <a>Dolor Sit amet</a>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </li>
@@ -151,14 +122,17 @@ class About extends React.Component {
           </div>
         </section>
         <section>
-          <div className="whoweare">
+          <img
+            src={whoweare_blue_bar}
+            className="who-blue"
+            data-aos="fade-right"
+          ></img>
+          <div id="whoweare">
             <br />
             <h1>Who we are</h1>
-           {/*  <Filter /> */}
-           <SlideMenu/>
+            <SlideMenu />
           </div>
         </section>
-      {/*   <SlideMenu/> */}
         <section>
           <div className="careers">
             <h1 className="careers">Careers</h1>
@@ -169,46 +143,79 @@ class About extends React.Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <h3 className="careers">VP, Platform Sales</h3>
+            <ul>
+              <li>VP, Platform Sales</li>
+              <img src={bar}></img>
+              <li>VP, Platform Sales</li>
+              <img src={bar}></img>
+              <li>VP, Platform Sales</li>
+              <img src={bar}></img>
+            </ul>
           </div>
         </section>
-        <section>
-          <div className="connect"></div>
+        <section className="connect">
+          <div className="connect">
+            <a className="a1">Work with us</a>
+            <a className="a2">Media Inquiries</a>
+            <a className="a3">Support</a>
+            <ul>
+              <li>
+                Ready to scale your advertising and get strong ROI? We're here
+                to help you achieve it.
+              </li>
+              <li>
+                Want to collaborate on a new partnership, event or story? Our
+                Marketing Team can help.
+              </li>
+              <li>
+                Need help becoming an expert in OpenAP? Our Client Services Team
+                has you covered.
+              </li>
+            </ul>
+          </div>
         </section>
         <footer>
           <img src={open_logo_white} className="footer-logo" />
-          <ol className="footer">
-            {<strong>Explore our site</strong>}
-            <li>
-              <a href="https://www.openaptvapp.com/">Sign In</a>
-            </li>
-            <li>Schedule a Demo</li>
-            <li>How it Works</li>
-            <li>Insights</li>
-            <li>About Us</li>
-          </ol>
-          <ol>
-            {<strong>Say Hello</strong>}
-            <br />
-            <li>
-              <strong>New York</strong>
-            </li>
-            <li>29 W 17th St</li>
-            <li>Fourth Floor</li>
-            <li>New York, NY 10011</li>
-            <br />
-            <li>
-              <strong>Los Angeles</strong>
-            </li>
-            <li>10250 Constellation Blvd</li>
-            <li>Los Angeles, Ca 90066</li>
-          </ol>
-          <ol>
-            {<strong>Connect with us</strong>}
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-          </ol>
+          {/*  <h1>Explore our site</h1>
+            <h2>Say Hello</h2> */}
+          <div>
+            <div>
+            <ul className="body-1">
+              <a className="heading">Explore our site</a>
+              <li>Sign In</li>
+              <li>Schedule a Demo</li>
+              <li>How it Works</li>
+              <li>Insights</li>
+              <li>About Us</li>
+            </ul>
+            </div>
+            <div>
+            <ul className="body-2">
+              <a className="heading">Say hello</a>
+              <li>
+                <strong>New York</strong>
+              </li>
+              <li>29 W 17th St</li>
+              <li>Fourth Floor</li>
+              <li>New York, NY 10011</li>
+              <br />
+              <li>
+                <strong>Los Angeles</strong>
+              </li>
+              <li>10250 Constellation Blvd</li>
+              <li>Los Angeles, Ca 90066</li>
+            </ul>
+             </div>
+             <div>
+            <ul className="body-3">
+              <a className="heading">Connect with us</a>
+              <li>LinkedIn</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+            </div>
+            </div>
+            {"Copyright/Terms/Privacy"}
         </footer>
       </div>
     );
