@@ -518,6 +518,21 @@ li.menu-item.active .menu-item-text {
   color: #858585;
 }
 
+#careers .viewCareers {
+  position: absolute;
+  width: 165px;
+  height: 44px;
+  left: 12%;
+  top: 4400px;
+  color: white;
+  background: #0d64ff;
+  border-radius: 40px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  border: 0;
+}
+
 ul#careers-list {
   position: absolute;
   list-style: none;
@@ -848,7 +863,6 @@ section .connect {
   position: absolute;
   left: 1224px;
   top: 2214px;
-
 }
 
 .who-blue {
@@ -1132,6 +1146,10 @@ section .connect {
 
 /* Careers */
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  #careers .viewCareers{
+    left: 18%;
+  }
+  
   ul#careers-list {
     left: 55%;
   }

@@ -159,6 +159,7 @@ class About extends React.Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <button className="viewCareers">View Careers</button>
             <img className="ellipse-sm-connect" data-aos="fade-up"></img>
             <img
               src={careers_open_circle}
