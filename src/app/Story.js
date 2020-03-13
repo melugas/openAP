@@ -24,7 +24,7 @@ const Story = () =>{
             <div>
               <div
                 className="rectangle"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 alt="rectangle"
               ></div>
               <div

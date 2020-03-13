@@ -9,8 +9,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-height: 5805px;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-areas:
+  "header"
+  "#story"
+  "footer"
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+cursor: pointer;
+}
+
+
 /* @media (min-width: 1440px){
-.container {width: 1440px}
 } */
 
 
@@ -27,10 +48,37 @@ add breaks
  */
 
 /* Top Nav Menu */
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: left;
+  font-size: calc(5px + 1vmin);
+  justify-content: inherit;
+}
+
+.headerMenu {
+  position: absolute;
+  left: 760px;
+  top: 38px;
+}
+
 .header ul {
   list-style: none;
   display: inline-block;
 }
+
+/* .header img {
+  position: absolute;
+  width: 104.63px;
+  height: 62px;
+  left: 60px;
+  top: 38px;
+} */
+
+
 
 .header ul li {
   font-family: "Manjari";
@@ -72,7 +120,7 @@ font-family: Manjari;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
-line-height: 150%;
+line-height: 165%;
 /* or 30px */
 
 letter-spacing: 0.03em;
@@ -170,34 +218,6 @@ footer .heading {
   
 }
 
-
-
-.container {
-  position: relative;
-  max-width: 1440px;
-  max-height: 5805px;
-  display: grid;
-
-  overflow-x: hidden;
-}
-
-
-header {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  align-items: left;
-  font-size: calc(5px + 1vmin);
-  justify-content: inherit;
- ; 
-}
-
-header .headerMenu {
-  position: absolute;
-  left: 760px;
-  top: 38px;
-}
-
 footer {
   display: flex;
   bottom: 0;
@@ -220,5 +240,38 @@ footer {
 }
 
 
+@media only screen and (min-width:1441px) and (max-width:1920px){
+  .container{
+    width: 100%;
+    grid-template-columns: 6fr;
+    grid-template-areas: 
+  "header"
+  "story"
+  "footer";
+  }
+
+  .header {
+   display: flex;
+   width: 100%;
+   font-size: calc(5px + 1vmin);
+   grid-column: none;
+   min-height: 0px;
+  }
+
+ .headerMenu{
+   position: absolute;
+   left: 55%;
+   float: right;
+   top: 38px;
+   padding: 5px 0px;
+ }
+}
+
+
+@media only screen and (min-width:1400px){
+  .container{
+    max-width: 100%;
+  }
+}
 
 
