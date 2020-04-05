@@ -30,6 +30,10 @@ a:hover, a:active {
 cursor: pointer;
 }
 
+a:visited {
+  color: black;
+}
+
 
 /* @media (min-width: 1440px){
 } */

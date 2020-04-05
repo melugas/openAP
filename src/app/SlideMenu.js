@@ -45,39 +45,179 @@ export default function SlideMenu() {
             <ul className="open">
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
 
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={placeholder} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
             </ul>
           </div>
@@ -91,39 +231,179 @@ export default function SlideMenu() {
             <ul className="open">
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
 
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={dropdot} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
             </ul>
           </div>
@@ -137,39 +417,179 @@ export default function SlideMenu() {
             <ul className="open">
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
 
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
               <li>
                 <img src={orange} className="whoweare-dot" />
-                <h4 style={{display: `flex`, position: `absolute`, marginLeft: `60px`, color: `black`}}>David Levy</h4>
-            <h4 style={{display: `flex`, position: `absolute`, marginLeft: `10px`, marginTop: `50px`, color: `gray`, fontWeight: `normal`}}>Cheif Executive Officer</h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `60px`,
+                    color: `black`
+                  }}
+                >
+                  David Levy
+                </h4>
+                <h4
+                  style={{
+                    display: `flex`,
+                    position: `absolute`,
+                    marginLeft: `10px`,
+                    marginTop: `50px`,
+                    color: `gray`,
+                    fontWeight: `normal`
+                  }}
+                >
+                  Cheif Executive Officer
+                </h4>
               </li>
             </ul>
           </div>
