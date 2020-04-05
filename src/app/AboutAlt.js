@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "../static/styles/about2.css";
 import "../static/styles/index.css";
 import open_logo_blue from "../static/images/open_logo_blue.png";
@@ -29,15 +29,22 @@ import Story from "./Story.js";
 import Header from "./Header.js";
 import MissionCarousel from "./MissionCarousel";
 
-const AboutAlt = () => {
+class AboutAlt extends React.Component {
+
+  componentDidMount() {
+    AOS.init({
+      duration: 2000
+    });
+  }
+
+render() {
   return (
     <div className="container">
       <Header />
       <section>
-        <div id="story">
+        <div id="header">
           <h2>
-            The advanced advertising company bringing simplicity and scale  to
-            audience-based campaigns in television
+          We bring simplicity and scale to audience- based campaigns in television. 
           </h2>
           <button className="button">Schedule a demo</button>
           <div>
@@ -57,18 +64,6 @@ const AboutAlt = () => {
               alt="ellipse-sm"
             ></div>
             <img
-              className="open-gray"
-              data-aos="fade-up"
-              src={open_O_gray}
-              alt="open_O_gray"
-            />
-            <img
-              className="open-blue"
-              data-aos="fade-up"
-              src={open_A_blue}
-              alt="open_O_gray"
-            />
-            <img
               className="open-o-blue"
               data-aos="fade-up"
               src={open_O_blue}
@@ -77,30 +72,18 @@ const AboutAlt = () => {
             <img className="ellipse-lg-gray" data-aos="fade-up" />
             <img className="ellipse-sm-right" data-aos="fade-up" />
           </div>
-          {/* <h1>Our Story</h1>
-            <p>
-              Founded and owned by TV's largest publishers, we are today a
-              collective of seasoned leaders focused on building a company that
-              will fundamentally change the way advertising is bought and sold
-              on television. Together with the support of our members Fox,
-              NBCUniversal, ViacomCBS and Univision, our mission is to bring
-              simplicity and scale to audience-based campaigns in television.
-            </p> */}
-        </div>
-        <h1 className="open-logo">OpenAP</h1>
       </section>
       <section>
         <div id="newstory">
           <h1>Our Story</h1>
-          {/* <p>
+          <p>
             Founded and owned by TV's largest publishers, we are today a
             collective of seasoned leaders focused on building a company that
             will fundamentally change the way advertising is bought and sold on
             television. Together with the support of our members Fox,
             NBCUniversal, ViacomCBS and Univision, our mission is to bring
             simplicity and scale to audience-based campaigns in television.
-          </p> */}
-         
+          </p> 
         </div>
       </section>
       <div className="rectangle-lg" data-aos="fade-up"></div>
@@ -293,5 +276,7 @@ const AboutAlt = () => {
     </div>
   );
 };
+}
 
 export default AboutAlt;
+ */

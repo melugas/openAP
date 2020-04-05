@@ -4,7 +4,7 @@ import About from "./About.js";
 import AboutAlt from "./AboutAlt.js";
 
 function App() {
-  return <AboutAlt />;
+  return <About />;
 }
 
 export default App;
